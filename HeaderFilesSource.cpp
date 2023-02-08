@@ -1,0 +1,57 @@
+#include <iostream>
+#include "Object.h"
+#include "Actor.h"
+#include "Pawn.h"
+
+using namespace std;
+
+void InheritanceFunction()
+{
+
+	Object* ptr_to_object = new Object;
+
+	Actor* ptr_to_actor = new Actor;
+
+	Pawn* ptr_to_pawn = new Pawn;
+
+	Object* ObjectArray[] = { ptr_to_object,  ptr_to_actor, ptr_to_pawn };
+
+	for (int i = 0; i < 3; i++)
+	{
+		//	ObjectArray[i]->BeginPlay();
+			//ObjectArray[i]->ObjectFunction();  This works 
+			// ObjectArray[i]->ActorFunction(); // Does not work because object does not have actor function! 
+			//casting attempts to convert to a different type and we can use dynamic casting
+			// to check dynamically the type
+		Object* obj = ObjectArray[i];
+		//Actor* act = dynamic_cast<Actor*> (obj); // attempt to convert obj to pointer to actor type 
+		//if (act) // if cast is not successful act will be null/false
+		//{
+		//	act->ActorFunction(); // second and third elements of the array will be called ,i.e. cast succeeeds
+		//}
+		Pawn* pwn = dynamic_cast<Pawn*> (obj);
+		if (pwn) {
+			pwn->PawnFunction();
+		}
+
+		Actor* act = static_cast<Actor*> (obj); // this will be converted to actor pointer  there is no run-time type checking , so won't get errors
+		if (act) //  cast is always successful 
+		{
+			act->ActorFunction();
+		}
+
+
+
+	}
+
+
+	delete ptr_to_object;
+	delete ptr_to_actor;
+
+}
+
+int main() {
+	InheritanceFunction();
+}
+
+
