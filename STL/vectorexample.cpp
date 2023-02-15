@@ -31,6 +31,8 @@ public:
 
 int main()
 {
+    //std::size_t is the unsigned integer type of the result of the sizeof operator as well as the sizeof... operator and the alignof operator (since C++11). 
+    
     size_t size = 4;
     vector<string> stringVector(size);
     stringVector[0] = "Janani";
