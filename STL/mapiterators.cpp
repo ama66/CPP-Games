@@ -24,8 +24,8 @@ int main()
 {
 
 	map<string, string> personMap;
-	personMap.insert(std::pair<string, string>("janani", "ravi"));
-	personMap.insert(std::pair<string, string>("Ram", "Balakrish"));
+	personMap.insert(pair<string, string>("janani", "ravi"));
+	personMap.insert(pair<string, string>("Ram", "Balakrish"));
 	personMap["Ammar"] = "abdilghanie";
 
 
