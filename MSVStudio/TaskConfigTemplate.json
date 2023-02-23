@@ -4,7 +4,7 @@
 		{
 			"type": "cppbuild",
 			"label": "Build with Clang",
-			"command": "C:\\Users\\amohammed\\mingw64\\bin\\clang++.exe",
+			"command": "C:\\Users\\aelghany\\mingw64\\bin\\clang++.exe",
 			"args": [
 				"-g",
 				"-std=c++20",
@@ -19,12 +19,12 @@
 				"$gcc"
 			],
 			"group": "build",
-			"detail": "compiler: C:\\Users\\amohammed\\mingw64\\bin\\clang++.exe"
+			"detail": "compiler: C:\\Users\\aelghany\\mingw64\\bin\\clang++.exe"
 		},
 				{
 					"type": "cppbuild",
 					"label": "Build with GCC",
-					"command": "C:\\Users\\amohammed\\mingw64\\bin\\g++.exe",
+					"command": "C:\\Users\\aelghany\\mingw64\\bin\\g++.exe",
 					"args": [
 						"-g",
 						"-std=c++20",
