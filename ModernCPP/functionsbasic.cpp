@@ -2,8 +2,9 @@
 #include <array>
 
 
-//double sum( double scores[], size_t count){ this array scores decay into a pointer so cannot use sizeof(scores) because it returns the size of a double pointer
-// not the array 
+//double sum( double scores[], size_t count){ this array scores decay into a pointer so cannot use sizeof(scores) because it returns the size of a double pointer (8 bytes)
+// not the array. Also std::size(scores) will not compile! 
+
 
 double sum (double* scores , size_t count){
 
