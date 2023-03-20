@@ -1,7 +1,7 @@
 #include <iostream>
 
 //Declaration
-double sum( const double (&scores) [10]);  // this preserves the score array so one can use it for size and for loops...etc. 
+double sum( const double (&scores) [10]);  // this preserves the score array so one can use it for size and range based for loops...etc. 
 
 
 int main(){
