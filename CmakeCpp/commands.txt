@@ -1,0 +1,16 @@
+   ## Getting information
+   cmake -- version
+   cmake --help
+  cmake --system-information
+  cmake --system-information info.txt
+ ############
+ build projects in build dirctory note source is assumed to be in ../
+  cmake -G  "MinGW Makefiles" ../
+  cmake -G"MinGW Makefiles" -D CMAKE_CXX_COMPILER=g++ ../ 
+  #### build targets inside the build directory
+  cmake --build . 
+  cmake --build . --target clean
+ cmake --build  . --target logger
+
+
+ 
