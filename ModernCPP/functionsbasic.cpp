@@ -26,7 +26,7 @@ int main(){
     double my_scores[]{10.5,34.3,4.8,6.5};
     //std::cout << "sizeof(my_scores) : " << sizeof(my_scores) << std::endl;
    
-
+// here size(my_scores) works! unlike when scores [] is used in function params where it decays to a pointer! 
    double result = sum(my_scores,std::size(my_scores));
    std::cout << "result : " << result << std::endl;
  
