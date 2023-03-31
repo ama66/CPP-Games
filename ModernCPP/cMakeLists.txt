@@ -1,3 +1,4 @@
+// to be used with vcpkg check out https://www.youtube.com/watch?v=iZeK3Ie5Fz0 
 cmake_minimum_required(VERSION 3.0.0)
 project(lamproj VERSION 0.1.0)
 INCLUDE_DIRECTORIES(
